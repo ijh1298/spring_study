@@ -19,7 +19,7 @@ public class ArticleController {
         return "articles/new";
     }
 
-    @PostMapping("articles/create")
+    @PostMapping("/articles/create")
     // new.mustache에서 action="/articles/create"로 작성했으므로
     public String createArticle(ArticleForm form){ // dto package에 정의된 ArticleForm class
         System.out.println(form.toString()); // 메서드 생성 및 반환값 작성
